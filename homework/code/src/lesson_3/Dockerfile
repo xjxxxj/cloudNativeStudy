@@ -12,6 +12,8 @@ FROM alpine
 
 WORKDIR /app
 
+ENV VERSION='0.1'
+
 COPY --from=builder /build/httpserver /app/httpserver
 
 CMD ["./httpserver"]
