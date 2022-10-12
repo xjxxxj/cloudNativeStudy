@@ -58,6 +58,6 @@
   nsenter -t 17478 -n ip addr
   ```
 
-  ![1665594498727](https://github.com/xjxxxj/cloudNativeStudy/blob/master/homework/code/src/lesson_3/readme.assets/1665593549271.png?raw=true)
+  ![1665594498727](https://github.com/xjxxxj/cloudNativeStudy/blob/master/homework/code/src/lesson_3/readme.assets/1665594498727.png?raw=true)
 
   ![1665594528359](https://github.com/xjxxxj/cloudNativeStudy/blob/master/homework/code/src/lesson_3/readme.assets/1665594528359.png?raw=true)
