@@ -17,7 +17,7 @@
   docker build  -t xjxxxj/xieqx-http-server:v2 .
   ```
 
-  ![1665593077604](H:\coding\go_study\cloudNativeStudy\homework\code\src\lesson_3\readme.assets\1665593077604.png)
+  ![1665593077604](https://github.com/xjxxxj/cloudNativeStudy/blob/master/homework/code/src/lesson_3/readme.assets/1665593077604.png?raw=true)
 
 - 执行下面命令推送到镜像仓库
 
@@ -26,11 +26,11 @@
   docker push xjxxxj/xieqx-http-server:v2
   ```
 
-  ![1665593242744](H:\coding\go_study\cloudNativeStudy\homework\code\src\lesson_3\readme.assets\1665593242744.png)
+  ![1665593242744.png](https://github.com/xjxxxj/cloudNativeStudy/blob/master/homework/code/src/lesson_3/readme.assets/1665593242744.png?raw=true)
 
 - 然后在官网上就可以看到了：https://hub.docker.com/repository/docker/xjxxxj/xieqx-http-server/tags?page=1&ordering=last_updated
 
-  ![1665593291071](readme.assets\1665593291071.png)
+  ![1665593291071](https://github.com/xjxxxj/cloudNativeStudy/blob/master/homework/code/src/lesson_3/readme.assets/1665593291071.png?raw=true)
 
 - 本地运行镜像
 
@@ -38,7 +38,7 @@
   docker run -d -p 8080:80 xjxxxj/xieqx-http-server:v2
   ```
 
-  ![1665593399770](H:\coding\go_study\cloudNativeStudy\homework\code\src\lesson_3\readme.assets\1665593399770.png)
+  ![1665593399770](https://github.com/xjxxxj/cloudNativeStudy/blob/master/homework/code/src/lesson_3/readme.assets/1665593399770.png?raw=true)
 
 - 使用curl验证httpserver应用已经生效
 
@@ -47,7 +47,7 @@
   curl -v 127.0.0.1:8080/healthz
   ```
 
-  ![1665593549271](H:\coding\go_study\cloudNativeStudy\homework\code\src\lesson_3\readme.assets\1665593549271.png)
+  ![1665593549271](https://github.com/xjxxxj/cloudNativeStudy/blob/master/homework/code/src/lesson_3/readme.assets/1665593549271.png?raw=true)
 
 - 获取容器pid并且通过nsenter查看容器网络配置
 
@@ -58,6 +58,6 @@
   nsenter -t 17478 -n ip addr
   ```
 
-  ![1665594498727](readme.assets\1665594498727.png)
+  ![1665594498727](https://github.com/xjxxxj/cloudNativeStudy/blob/master/homework/code/src/lesson_3/readme.assets/1665593549271.png?raw=true)
 
-  ![1665594528359](H:\coding\go_study\cloudNativeStudy\homework\code\src\lesson_3\readme.assets\1665594528359.png)
+  ![1665594528359](https://github.com/xjxxxj/cloudNativeStudy/blob/master/homework/code/src/lesson_3/readme.assets/1665594528359.png?raw=true)
